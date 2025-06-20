@@ -6,6 +6,13 @@ let firstOperand = null;
 let operator = null;
 let waitingState = false;
 
+const formatResult = (num) => {
+  const str = num.toString();
+  if (str.length <= 11) return str;
+  const fixed = num.toFixed(10); // 최대한 길게 자름
+  return fixed.slice(0, 11).replace(/\.?0+$/, ""); // 소수점 이하 0 제거
+};
+
 // 사직연산 객체 메서드
 const operators = {
   "+": (a, b) => a + b,
@@ -40,10 +47,10 @@ const handleOperator = (nextOperator) => {
   if (nextOperator === "%") {
     if (firstOperand !== null) {
       const percentValue = firstOperand * (inputValue / 100);
-      output.textContent = Number(percentValue.toFixed(6));
+      output.textContent = formatResult(percentValue);
     } else {
       const percentValue = inputValue / 100;
-      output.textContent = Number(percentValue.toFixed(6));
+      output.textContent = formatResult(percentValue);
     }
     return;
   }
@@ -59,7 +66,7 @@ const handleOperator = (nextOperator) => {
     firstOperand = inputValue;
   } else if (operator) {
     const result = operators[operator](firstOperand, inputValue);
-    output.textContent = Number(result.toFixed(6));
+    output.textContent = formatResult(result);
     firstOperand = result;
   }
 
@@ -75,7 +82,7 @@ const handleEquals = () => {
   if (firstOperand == null || isNaN(secondOperand)) return;
 
   const result = operators[operator](firstOperand, secondOperand);
-  output.textContent = Number(result.toFixed(6));
+  output.textContent = formatResult(result);
   firstOperand = null;
   operator = null;
   waitingState = false;
