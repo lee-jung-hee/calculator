@@ -3,7 +3,7 @@
 A clean, responsive, retro-style calculator built using **vanilla HTML, CSS, and JavaScript**.  
 Supports basic arithmetic operations, percent calculation, input validation, and keyboard control.
 
-![screenshot](preview.png)
+![screenshot](simple-calulator.png)
 ---
 
 ## ✨ Features
