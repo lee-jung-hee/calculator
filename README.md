@@ -3,7 +3,9 @@
 A clean, retro-style calculator built using **HTML, CSS, and JavaScript**.  
 Supports basic arithmetic operations, percent calculation, input validation, and keyboard control.
 
+<a href="https://calculator-leejunghee.vercel.app/">
 <img src="simple-calulator.png" alt="Live demo" width="200"/>
+</a>
 
 ---
 
