@@ -1,9 +1,17 @@
 # 🧮 Retro Calculator
 
-A clean, responsive, retro-style calculator built using **vanilla HTML, CSS, and JavaScript**.  
+A clean, retro-style calculator built using **HTML, CSS, and JavaScript**.  
 Supports basic arithmetic operations, percent calculation, input validation, and keyboard control.
 
-![screenshot](simple-calulator.png)
+<img src="simple-calulator.png" alt="Live demo" width="200"/>
+
+---
+
+## 🔗 Live Demo
+
+👉 **Try it here:**  
+[https://calculator-leejunghee.vercel.app/](https://calculator-leejunghee.vercel.app/)
+
 ---
 
 ## ✨ Features
@@ -18,11 +26,10 @@ Supports basic arithmetic operations, percent calculation, input validation, and
 ---
 
 ## 📁 Project Structure
-📦 calculator-project/
-┣ 📄 index.html        # HTML markup
-┣ 📄 calculator.css    # Styling
-┣ 📄 calculator.js     # Logic & event handling
-┗ 📄 preview.png       # (Optional) Screenshot
+<div>📦 calculator-project</div>
+<div>┣ 📄 index.html        # HTML markup</div>
+<div>┣ 📄 calculator.css    # Styling</div>
+<div>┗ 📄 calculator.js     # Logic & event handling</div>
 
 ---
 
@@ -57,9 +64,9 @@ It’s a great example of building a fully functional app with no frameworks —
 ---
 
 ## 🛠️ Built With
-	•	HTML5
-	•	CSS3
-	•	JavaScript (ES6+)
+HTML5
+CSS3
+JavaScript (ES6+)
 
 ---
 
